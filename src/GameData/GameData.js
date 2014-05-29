@@ -1,0 +1,88 @@
+/**
+ * Created by gt60 on 13-10-18.
+ */
+var PZ = PZ || {};
+
+PZ.MUSIC = true;
+PZ.EFFECT_SOUND = true;
+PZ.SUN = 0;
+PZ.NOW_TIME = null;
+PZ.TOTAL_ZOMBIES = 0;
+PZ.DIED_ZOMBIES = 0;
+PZ.CONTAINER = {
+    PLANTS:[],
+    ZOMBIES:[],
+    BULLET:[],
+    CARDS:[]
+};
+
+PZ.TIME = {
+    DAY:1,
+    NIGHT:2
+};
+
+PZ.GAME_STATE = {
+    PLAYING:1,
+    READY:2,
+    PAUSING:3,
+    GAMEOVER:4
+};
+
+PZ.SELECT_STATE = {
+    EMPTY:0,
+    GRID:1,
+    SHOVEL:2
+};
+
+PZ.CARD_STATE = {
+    CD:1 << 0,
+    NO_SUN:1 << 1,
+    SELECTED:1 << 2
+};
+
+PZ.ZOMBIE_STATE = {
+    NORMAL:0,
+    FREEZED:1 << 0,
+    TIED:1 << 1,
+    ATTACK:1 << 2
+};
+
+//攻击阶段比平时阶段多1
+PZ.ZOMBIE_STAGE = {
+    DIE:0,
+
+    NORMAL:1,
+    NORMAL_ATTACK:2,
+    NO_HEAD:3,
+    NO_HEAD_ATTACK:4,
+
+    CONE_HAT:5,
+    CONE_HAT_ATTACK:6,
+
+    BUCKET_HAT:7,
+    BUCKET_HAT_ATTACK:8,
+
+    FLAG_NORMAL:9,
+    FLAG_ATTACK:10,
+    FLAG_NO_HEAD:11,
+    FLAG_NO_HEAD_ATTACK:12,
+
+    PAPER_DIE:14,
+
+    PAPER_SLOW:15,
+    PAPER_SLOW_ATTACK:16,
+    PAPER_FAST:17,
+    PAPER_FAST_ATTACK:18,
+    PAPER_NO_HEAD_SLOW:19,
+    PAPER_NO_HEAD_SLOW_ATTACK:20,
+    PAPER_NO_HEAD_FAST:21,
+    PAPER_NO_HEAD_FAST_ATTACK:22,
+
+    POLE_DIE:24,
+
+    POLE_SLOW:25,
+    POLE_ATTACK:26,
+    POLE_FAST:27,
+    POLE_NO_HEAD:28,
+    POLE_NO_HEAD_ATTACK:29
+};

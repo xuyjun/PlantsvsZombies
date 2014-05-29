@@ -1,0 +1,34 @@
+{
+    "debugMode"     : 1,
+    "showFPS"       : true,
+    "frameRate"     : 60,
+    "id"            : "gameCanvas",
+    "renderMode"    : 0,
+    "engineDir"     :"../../frameworks/cocos2d-html5",
+
+    "modules"       : ["cocos2d"],
+
+    "jsList" : [
+        "src/PZLoaderScene.js",
+        "src/resource.js",
+        "src/GameData/GameData.js",
+        "src/GameData/PlantData.js",
+        "src/GameData/ZombieData.js",
+        "src/GameData/BulletData.js",
+        "src/GameData/GameStage.js",
+        "src/GameMenu.js",
+        "src/WelcomeLayer.js",
+        "src/GameController.js",
+        "src/LogoLayer.js",
+        "src/GameButton.js",
+        "src/GameLayer.js",
+        "src/CardSprite.js",
+        "src/Plant.js",
+        "src/Zombie.js",
+        "src/Bullet.js",
+        "src/Effect.js",
+        "src/Animation.js",
+        "src/ShootPlant.js",
+        "src/SleepPlant.js"
+    ]
+}
